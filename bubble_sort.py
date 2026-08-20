@@ -26,7 +26,7 @@ def bubble_sort_otimizado(lista):
             lista[j], lista[j + 1] = lista[j + 1], lista[j]
             trocas += 1
             houve_troca = True
-         if not houve_troca:
+      if not houve_troca:
             break
    print("passagens=" + str(passagens))
    print("trocas=" + str(trocas))
@@ -38,3 +38,4 @@ def bubble_sort_otimizado(lista):
 # com break, economizando passagens desnecessárias. 
 # O contador de passagens soma um a cada repetição do laço externo, 
 # e o contador de trocas soma um a cada troca de posições realizada.
+
