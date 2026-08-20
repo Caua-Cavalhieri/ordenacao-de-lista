@@ -38,6 +38,3 @@ def bubble_sort_otimizado(lista):
 # com break, economizando passagens desnecessárias. 
 # O contador de passagens soma um a cada repetição do laço externo, 
 # e o contador de trocas soma um a cada troca de posições realizada.
-nsasjhsjaddgvfjhdfkujasd
-ckjadbguysdgfykasdf
-fgvasfgasjhdf
