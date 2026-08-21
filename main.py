@@ -12,13 +12,29 @@
 
 from bubble_sort import bubble_sort, bubble_sort_otimizado
 from utilitarios import ler_lista_do_usuario, exibir_resultado
+from selection_sort import selection_sort
 #---------------------------------------------------------------#
 
 def exibir_menu():
    print("")
    print("1. Bubble Sort (versão básica)")
    print("2. Bubble Sort (versão otimizada)")
+   print("3. Selection Sort")
+   print("4. Comparacao rapida (bubble x Selection)")
    print("0. Sair")
+
+#---------------------------------------------------------------#
+
+def executar_comparacao_rapida():
+   lista = ler_lista_do_usuario()
+   copia_bubble = list(lista)
+   copia_selection = list(lista)
+   print("Bubble Sort otimizado:")
+   resultado_bubble = bubble_sort_otimizado(copia_bubble)
+   print("Selection Sort:")
+   resultado_selection = selection_sort(copia_selection)
+   print("Resultado Bubble Sorte Otimizado: " + str(resultado_bubble))
+   print("Resultado Selection Sorte: " + str(resultado_selection))
 
 #---------------------------------------------------------------#
 
@@ -39,6 +55,12 @@ def main():
          lista = ler_lista_do_usuario()
          resultado = bubble_sort_otimizado(list(lista))
          exibir_resultado("Bubble Sort otimizado", resultado)
+      elif opcao == 3:
+         lista = ler_lista_do_usuario()
+         resultado = selection_sort(list(lista))
+         exibir_resultado("Selection Sorte", resultado)
+      elif opcao == 4:
+         executar_comparacao_rapida()
       elif opcao == 0:
          print("Encerrando o programa.")
       else:
